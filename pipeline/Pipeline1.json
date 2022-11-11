@@ -47,7 +47,7 @@
 					},
 					"activities": [
 						{
-							"name": "categoria",
+							"name": "copydata",
 							"type": "Copy",
 							"dependsOn": [],
 							"policy": {
@@ -61,6 +61,7 @@
 							"typeProperties": {
 								"source": {
 									"type": "AzureSqlSource",
+									"sqlReaderQuery": "SELECT *\nFROM dbRetail.INFORMATION_SCHEMA.TABLES\nWHERE table_type = 'BASE TABLE'",
 									"queryTimeout": "02:00:00",
 									"partitionOption": "None"
 								},
