@@ -1,0 +1,42 @@
+{
+	"name": "stock",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabases",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Producto",
+				"type": "varchar"
+			},
+			{
+				"name": "Cod_Producto",
+				"type": "varchar"
+			},
+			{
+				"name": "Cod_SubCategoria",
+				"type": "varchar"
+			},
+			{
+				"name": "Cod_Sucursal",
+				"type": "varchar"
+			},
+			{
+				"name": "Cantidad",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Cod_Categoria",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Stock"
+		}
+	}
+}

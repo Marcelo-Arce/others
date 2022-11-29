@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "Copy to csv 1",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -43,19 +43,19 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "acTableList",
+						"referenceName": "stock",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "DelimitedText2",
+						"referenceName": "stocktabla",
 						"type": "DatasetReference"
 					}
 				]
 			},
 			{
-				"name": "Copy data2",
+				"name": "Copy to csv 2",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -95,13 +95,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "acTableList",
+						"referenceName": "ventasint",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "DelimitedText2",
+						"referenceName": "vtasInt",
 						"type": "DatasetReference"
 					}
 				]
