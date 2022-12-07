@@ -1,0 +1,46 @@
+{
+	"name": "Json3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "web"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"Producto": {
+					"type": "string"
+				},
+				"Cod_Producto": {
+					"type": "string"
+				},
+				"Cod_SubCategoria": {
+					"type": "string"
+				},
+				"Cod_Sucursal": {
+					"type": "string"
+				},
+				"Cod_Categoria": {
+					"type": "string"
+				},
+				"SubCategoria": {
+					"type": "string"
+				},
+				"Categoria": {
+					"type": "string"
+				},
+				"Cantidad": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}

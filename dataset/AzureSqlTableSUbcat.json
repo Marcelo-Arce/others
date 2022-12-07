@@ -1,0 +1,35 @@
+{
+	"name": "AzureSqlTableSUbcat",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabases",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Cod_SubCategoria",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SubCategoria",
+				"type": "varchar"
+			},
+			{
+				"name": "Cod_Categoria",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Categoria",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "SubCategoria"
+		}
+	}
+}
